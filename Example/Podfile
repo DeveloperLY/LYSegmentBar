@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'LYSegmentBar_Example' do
+  pod 'LYSegmentBar', :path => '../'
+
+  target 'LYSegmentBar_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
