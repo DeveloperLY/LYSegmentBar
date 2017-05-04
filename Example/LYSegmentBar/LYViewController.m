@@ -7,6 +7,8 @@
 //
 
 #import "LYViewController.h"
+#import "LYSegmentBar.h"
+#import <LYXiMaLaYaFMBase/UIView+LYAdjustFrame.h>
 
 @interface LYViewController ()
 
@@ -14,10 +16,17 @@
 
 @implementation LYViewController
 
-- (void)viewDidLoad
-{
+- (void)viewDidLoad {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    LYSegmentBar *segmentBar = [LYSegmentBar segmentBarWithFrame:CGRectMake(0, 20.0f, self.view.ly_width, 35.0f)];
+    segmentBar.backgroundColor = [UIColor orangeColor];
+    [self.view addSubview:segmentBar];
+    segmentBar.titleArray = @[@"推荐", @"热门", @"分类", @"榜单", @"主播"];
+    
+    // 测试改变数据源，强制刷新布局
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(5.0f * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        segmentBar.titleArray = @[@"推荐", @"热门", @"分类", @"榜单", @"主播", @"热门", @"分类", @"榜单", @"主播"];
+    });
 }
 
 - (void)didReceiveMemoryWarning

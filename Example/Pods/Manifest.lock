@@ -1,5 +1,7 @@
 PODS:
-  - LYSegmentBar (0.1.0)
+  - LYSegmentBar (0.1.0):
+    - LYXiMaLaYaFMBase/Category
+  - LYXiMaLaYaFMBase/Category (0.1.0)
 
 DEPENDENCIES:
   - LYSegmentBar (from `../`)
@@ -9,8 +11,9 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  LYSegmentBar: 30eddce2897a79502471e7e4223594a363a4116b
+  LYSegmentBar: 83029edf2501bdca9e1f3e304272ffdc13c470ed
+  LYXiMaLaYaFMBase: 866d3f44b7a1c0d3a214614125ff23b66e7c4c2f
 
-PODFILE CHECKSUM: 7006508b3feef4478a23759bee27051d41e7bab8
+PODFILE CHECKSUM: 6b933d2af7bd8067b681561138005d20d11f2a1a
 
 COCOAPODS: 1.2.1

@@ -1,3 +1,6 @@
+source 'https://github.com/CocoaPods/Specs.git'
+source 'https://github.com/DeveloperLY/LYOpenSpecs.git' #私有索引库...
+
 use_frameworks!
 
 target 'LYSegmentBar_Example' do

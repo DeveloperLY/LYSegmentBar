@@ -18,5 +18,10 @@
   "platforms": {
     "ios": "8.0"
   },
-  "source_files": "LYSegmentBar/Classes/**/*"
+  "source_files": "LYSegmentBar/Classes/**/*",
+  "dependencies": {
+    "LYXiMaLaYaFMBase/Category": [
+
+    ]
+  }
 }
