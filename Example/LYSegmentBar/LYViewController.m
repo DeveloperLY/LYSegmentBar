@@ -10,7 +10,7 @@
 #import "LYSegmentBar.h"
 #import <LYXiMaLaYaFMBase/UIView+LYAdjustFrame.h>
 
-@interface LYViewController ()
+@interface LYViewController () <LYSegmentBarDelegate>
 
 @end
 
@@ -27,6 +27,12 @@
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(5.0f * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         segmentBar.titleArray = @[@"推荐", @"热门", @"分类", @"榜单", @"主播", @"热门", @"分类", @"榜单", @"主播"];
     });
+    
+    segmentBar.delegate = self;
+}
+
+- (void)segmentBar:(LYSegmentBar *)segmentBar didSelectIndex:(NSInteger)toIndex fromIndex:(NSInteger)fromIndex {
+    NSLog(@"toIndex:->%zd----fromIndex:->%zd", toIndex, fromIndex);
 }
 
 - (void)didReceiveMemoryWarning

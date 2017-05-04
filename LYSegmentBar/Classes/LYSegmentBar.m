@@ -45,12 +45,6 @@
     
     self.contentView.frame = self.bounds;
     
-    [self setUpTitleButtonFrame];
-    
-}
-
-#pragma mark - Private Method
-- (void)setUpTitleButtonFrame {
     // 计算margin
     CGFloat totalButtonWidth = 0.0f;
     for (UIButton *titleButton in self.titleButtons) {
@@ -76,6 +70,11 @@
 
 #pragma mark - Event/Touch
 - (void)titleButtonDidTouch:(UIButton *)sender {
+    
+    if ([self.delegate respondsToSelector:@selector(segmentBar:didSelectIndex:fromIndex:)]) {
+        [self.delegate segmentBar:self didSelectIndex:sender.tag fromIndex:self.selectedButton.tag];
+    }
+    
     self.selectedButton.selected = NO;
     sender.selected = YES;
     self.selectedButton = sender;
@@ -110,6 +109,7 @@
     // 根据传进来的数据源，创建titleButton
     for (NSString *title in titleArray) {
         UIButton *titleButton = [UIButton buttonWithType:UIButtonTypeCustom];
+        titleButton.tag = self.titleButtons.count;
         [titleButton setTitle:title forState:UIControlStateNormal];
         [titleButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
         [titleButton setTitleColor:[UIColor redColor] forState:UIControlStateSelected];
