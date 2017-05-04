@@ -17,8 +17,11 @@
 
 @property (nonatomic, strong) NSMutableArray <UIButton *> *titleButtons;
 
-/** 间距 */
-@property (nonatomic, assign) CGFloat margin;
+/** 下标视图 */
+@property (nonatomic, weak) UIView *underLine;
+
+/** 选中的TitleButton */
+@property (nonatomic, strong) UIButton *selectedButton;
 
 @end
 
@@ -71,6 +74,13 @@
     self.contentView.contentSize = CGSizeMake(lastX, 0.0f);
 }
 
+#pragma mark - Event/Touch
+- (void)titleButtonDidTouch:(UIButton *)sender {
+    self.selectedButton.selected = NO;
+    sender.selected = YES;
+    self.selectedButton = sender;
+}
+
 #pragma mark - Setter And Getter
 - (void)setTitleArray:(NSArray<NSString *> *)titleArray {
     _titleArray = titleArray;
@@ -83,6 +93,9 @@
     for (NSString *title in titleArray) {
         UIButton *titleButton = [UIButton buttonWithType:UIButtonTypeCustom];
         [titleButton setTitle:title forState:UIControlStateNormal];
+        [titleButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+        [titleButton setTitleColor:[UIColor redColor] forState:UIControlStateSelected];
+        [titleButton addTarget:self action:@selector(titleButtonDidTouch:) forControlEvents:UIControlEventTouchUpInside];
         [self.contentView addSubview:titleButton];
         [self.titleButtons addObject:titleButton];
     }
@@ -98,6 +111,16 @@
         _titleButtons = [NSMutableArray array];
     }
     return _titleButtons;
+}
+
+- (UIView *)underLine {
+    if (!_underLine) {
+        UIView *underLineView = [[UIView alloc] initWithFrame:CGRectMake(0, self.ly_height - 2.0f, 0, 2.0f)];
+        underLineView.backgroundColor = [UIColor redColor];
+        [self.contentView addSubview:underLineView];
+        _underLine = underLineView;
+    }
+    return _underLine;
 }
 
 @end

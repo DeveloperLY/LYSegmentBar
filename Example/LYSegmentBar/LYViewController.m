@@ -19,7 +19,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     LYSegmentBar *segmentBar = [LYSegmentBar segmentBarWithFrame:CGRectMake(0, 20.0f, self.view.ly_width, 35.0f)];
-    segmentBar.backgroundColor = [UIColor orangeColor];
+    segmentBar.backgroundColor = [UIColor brownColor];
     [self.view addSubview:segmentBar];
     segmentBar.titleArray = @[@"推荐", @"热门", @"分类", @"榜单", @"主播"];
     
