@@ -26,4 +26,7 @@
 /** 代理 */
 @property (nonatomic, weak) id<LYSegmentBarDelegate> delegate;
 
+/** 选中的下标 */
+@property (nonatomic, assign) NSInteger selectedIndex;
+
 @end

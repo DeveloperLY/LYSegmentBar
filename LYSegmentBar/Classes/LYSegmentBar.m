@@ -75,6 +75,8 @@
         [self.delegate segmentBar:self didSelectIndex:sender.tag fromIndex:self.selectedButton.tag];
     }
     
+    _selectedIndex = sender.tag;
+    
     self.selectedButton.selected = NO;
     sender.selected = YES;
     self.selectedButton = sender;
@@ -121,6 +123,17 @@
     // 当数据源改变时，必须强制刷新布局
     [self setNeedsLayout];
     [self layoutIfNeeded];
+}
+
+- (void)setSelectedIndex:(NSInteger)selectedIndex {
+    // 过滤非法数据
+    if (self.titleButtons.count == 0 || selectedIndex < 0 || selectedIndex > self.titleButtons.count - 1) {
+        return;
+    }
+    _selectedIndex = selectedIndex;
+    
+    UIButton *selectButton = self.titleButtons[selectedIndex];
+    [self titleButtonDidTouch:selectButton];
 }
 
 

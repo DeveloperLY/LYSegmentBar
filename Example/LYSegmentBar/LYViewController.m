@@ -12,6 +12,9 @@
 
 @interface LYViewController () <LYSegmentBarDelegate>
 
+/** <#description#> */
+@property (nonatomic, strong) LYSegmentBar *segmentBar;
+
 @end
 
 @implementation LYViewController
@@ -29,10 +32,15 @@
     });
     
     segmentBar.delegate = self;
+    self.segmentBar = segmentBar;
 }
 
 - (void)segmentBar:(LYSegmentBar *)segmentBar didSelectIndex:(NSInteger)toIndex fromIndex:(NSInteger)fromIndex {
     NSLog(@"toIndex:->%zd----fromIndex:->%zd", toIndex, fromIndex);
+}
+
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    self.segmentBar.selectedIndex = 3;
 }
 
 - (void)didReceiveMemoryWarning
