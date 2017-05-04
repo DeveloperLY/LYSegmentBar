@@ -70,6 +70,9 @@
 
 #pragma mark - Event/Touch
 - (void)titleButtonDidTouch:(UIButton *)sender {
+    if (self.selectedButton == sender) {
+        return;
+    }
     
     if ([self.delegate respondsToSelector:@selector(segmentBar:didSelectIndex:fromIndex:)]) {
         [self.delegate segmentBar:self didSelectIndex:sender.tag fromIndex:self.selectedButton.tag];
