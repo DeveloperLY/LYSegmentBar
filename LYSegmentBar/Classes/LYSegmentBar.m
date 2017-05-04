@@ -79,6 +79,12 @@
     self.selectedButton.selected = NO;
     sender.selected = YES;
     self.selectedButton = sender;
+    
+    // 设置下标指示器的位置
+    [UIView animateWithDuration:0.15f animations:^{
+        self.underLine.ly_width = sender.ly_width;
+        self.underLine.ly_centerX = sender.ly_centerX;
+    }];
 }
 
 #pragma mark - Setter And Getter
