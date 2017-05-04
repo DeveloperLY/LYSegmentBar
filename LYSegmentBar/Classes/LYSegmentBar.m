@@ -85,6 +85,18 @@
         self.underLine.ly_width = sender.ly_width;
         self.underLine.ly_centerX = sender.ly_centerX;
     }];
+    
+    // 选中居中
+    CGFloat offsetX = sender.ly_centerX - self.contentView.ly_width * 0.50f;
+    if (offsetX < 0) {
+        offsetX = 0;
+    }
+    CGFloat offsetWidth = self.contentView.contentSize.width - self.contentView.ly_width;
+    if (offsetX > offsetWidth) {
+        offsetX = offsetWidth;
+    }
+    
+    [self.contentView setContentOffset:CGPointMake(offsetX, 0.0f) animated:YES];
 }
 
 #pragma mark - Setter And Getter
