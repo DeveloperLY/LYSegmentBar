@@ -7,12 +7,9 @@
 //
 
 #import "LYSegmentBarViewController.h"
-#import "LYSegmentBar.h"
 #import <LYXiMaLaYaFMBase/UIView+LYAdjustFrame.h>
 
 @interface LYSegmentBarViewController () <LYSegmentBarDelegate, UIScrollViewDelegate>
-
-@property (nonatomic, weak) LYSegmentBar *segmentBar;
 
 @property (nonatomic, weak) UIScrollView *contentView;
 
@@ -29,12 +26,16 @@
 - (void)viewWillLayoutSubviews {
     [super viewWillLayoutSubviews];
     
+    if (self.segmentBar.superview == self.view) {
+        self.segmentBar.frame = CGRectMake(0, 60.0f, self.view.ly_width, 35.0f);
+        CGFloat contentViewY = self.segmentBar.ly_y + self.segmentBar.ly_height;
+        self.contentView.frame = CGRectMake(0, contentViewY, self.view.ly_width, self.view.ly_height - contentViewY);
+        self.contentView.contentSize = CGSizeMake(self.childViewControllers.count * self.view.ly_width, 0);
+        return;
+    }
+    
+    self.contentView.frame = CGRectMake(0, 0, self.view.ly_width, self.view.ly_height);
     self.contentView.contentSize = CGSizeMake(self.childViewControllers.count * self.view.ly_width, 0);
-    
-    self.segmentBar.frame = CGRectMake(0, 60.0f, self.view.ly_width, 35.0f);
-    
-    CGFloat contentViewY = self.segmentBar.ly_y + self.segmentBar.ly_height;
-    self.contentView.frame = CGRectMake(0, contentViewY, self.view.ly_width, self.view.ly_height - contentViewY);
 }
 
 #pragma mark - Public Method

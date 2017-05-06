@@ -7,8 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "LYSegmentBar.h"
 
 @interface LYSegmentBarViewController : UIViewController
+
+@property (nonatomic, weak) LYSegmentBar *segmentBar;
 
 - (void)setUpWithTitleArray:(NSArray <NSString *> *)titleArray childViewControllers:(NSArray <UIViewController *> *)childViewControllers;
 
