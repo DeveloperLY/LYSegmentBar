@@ -8,53 +8,56 @@
 
 /* Begin PBXBuildFile section */
 		0762F0705E3C9D14832949D95D41A607 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BC7E840066535B08631D757B8CD1167 /* Foundation.framework */; };
+		1983C91F8D2FB9B5D1D750DA85197F79 /* UIView+LYAdjustFrame.h in Headers */ = {isa = PBXBuildFile; fileRef = 7F9238467EEBAE2F7422E0288FFB5D84 /* UIView+LYAdjustFrame.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1DE7F1D8F24EC51C21E7820080764348 /* Pods-LYSegmentBar_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E0076AAFDDC357ADADE038EF34EF9916 /* Pods-LYSegmentBar_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1E1C13027ECC91484A1A57E69ED672BE /* UIImage+LYAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F78203B790454F24ACF81FD172282A7 /* UIImage+LYAdd.m */; };
+		218772EBCB84D966703E7D1759B223E0 /* LYSegmentBar.h in Headers */ = {isa = PBXBuildFile; fileRef = A2CF1810C67A01BE534A8183B86D84F9 /* LYSegmentBar.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2E2EE6DE1F72F2DC4944FFCAEF141993 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BC7E840066535B08631D757B8CD1167 /* Foundation.framework */; };
+		2EB109135BBBE24A420A0CED5287E4E6 /* LYXiMaLaYaFMBase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BEAB81BD6E7E6B4AE52CCD3874A98BC /* LYXiMaLaYaFMBase.framework */; };
 		2FDA8F928BF39E52F65B2603DBF909FF /* Pods-LYSegmentBar_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 90F76B9F80E1ED4D6ACFC0BA411A3546 /* Pods-LYSegmentBar_Example-dummy.m */; };
-		36915378E0FDADB4FA2D073AB5FE5829 /* UIView+LYAdjustFrame.h in Headers */ = {isa = PBXBuildFile; fileRef = 7F9238467EEBAE2F7422E0288FFB5D84 /* UIView+LYAdjustFrame.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3BBF9E0C1241F9F4FC69D81409C5844E /* LYSegmentBar-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7C11260A6B09740A2F76B223C1E52ADA /* LYSegmentBar-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3F80A7D7B5C7E741B6D4E8412E49C10C /* UIImage+LYAdd.h in Headers */ = {isa = PBXBuildFile; fileRef = 23F5949390442F0C91D9FBDD458DFC33 /* UIImage+LYAdd.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5118898FA9F80906870424182E7FB0BF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BC7E840066535B08631D757B8CD1167 /* Foundation.framework */; };
-		64665EBEF5E5CE158DF2611D36FF2FD2 /* LYXiMaLaYaFMBase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BEAB81BD6E7E6B4AE52CCD3874A98BC /* LYXiMaLaYaFMBase.framework */; };
+		5716EAC837C9787F556EDBB747757BF0 /* LYSegmentBarViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 4470A610AD881C2682BE8A03922AF7A1 /* LYSegmentBarViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5E52560521EF0FBA163C7BC47F12BAF1 /* LYSegmentBar-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7C11260A6B09740A2F76B223C1E52ADA /* LYSegmentBar-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7F97C57572E5FB84B97EF66F842811CF /* LYXiMaLaYaFMBase-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1881EB9FFD0942E3D13E1AA3DB4AD7C1 /* LYXiMaLaYaFMBase-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		81BDC6887087D7635C76C6C3027C0431 /* Pods-LYSegmentBar_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FB8660ED72B80B4B083EDA8956F2FA40 /* Pods-LYSegmentBar_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		85E91261B4CABE782D90E609464F0F8D /* CALayer+LYAnimate.m in Sources */ = {isa = PBXBuildFile; fileRef = 331ABCB36815DBCCA4A696445D126B24 /* CALayer+LYAnimate.m */; };
-		86BF38834CDE985AB6F7AAD80B62FE19 /* CALayer+LYAnimate.h in Headers */ = {isa = PBXBuildFile; fileRef = CB37DFED436A6758115913401C63105D /* CALayer+LYAnimate.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		90B90349DAEB157FF8DB7352676D9421 /* LYSegmentBar.m in Sources */ = {isa = PBXBuildFile; fileRef = E8236B19ECC5D8EBC0292456D94840E8 /* LYSegmentBar.m */; };
+		8CFFF207D46B541CFFF030CEF2D9126E /* LYXiMaLaYaFMBase-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 047069AB655E5F199143CB397E6F3367 /* LYXiMaLaYaFMBase-dummy.m */; };
+		8DC205C10AF155DC76CCE4AF9DA8024C /* LYSegmentBar-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 74A668A42CA20F038408EC58C98F2E88 /* LYSegmentBar-dummy.m */; };
+		8EFD981F5129AC0D9ECF1214DBFBB8B8 /* CALayer+LYAnimate.m in Sources */ = {isa = PBXBuildFile; fileRef = 331ABCB36815DBCCA4A696445D126B24 /* CALayer+LYAnimate.m */; };
 		90C0041EECE7F298E17DEED4AE288DFD /* Pods-LYSegmentBar_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 715AFC430A5A2F261BA4D9F76EC2C2A9 /* Pods-LYSegmentBar_Tests-dummy.m */; };
-		9B35A1F107B2E314881F298AA48C8926 /* LYSegmentBar.h in Headers */ = {isa = PBXBuildFile; fileRef = F95DF33D6365FAF2B3BC94073BADDB19 /* LYSegmentBar.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		AE11DB011C787A6415F9BA6D26F3CC02 /* LYXiMaLaYaFMBase-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 047069AB655E5F199143CB397E6F3367 /* LYXiMaLaYaFMBase-dummy.m */; };
-		CEC4294A4987B868F86C42FAD3C6421A /* LYXiMaLaYaFMBase-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1881EB9FFD0942E3D13E1AA3DB4AD7C1 /* LYXiMaLaYaFMBase-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D7CDC44A094811E062A9B580D84E040D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BC7E840066535B08631D757B8CD1167 /* Foundation.framework */; };
-		E2F591C7B15D41A643B98CBEEB54C9AD /* UIView+LYAdjustFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 57DB94E302A612962E8387C2D6DFF7D3 /* UIView+LYAdjustFrame.m */; };
+		A69B1CD4F01A1BC18A463FD86BBC1537 /* LYSegmentBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0269DC3019B96F1A9ED036ADC9E5BC03 /* LYSegmentBarViewController.m */; };
+		B3DEA22BDA0856E967CAAAA858B274D5 /* UIImage+LYAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F78203B790454F24ACF81FD172282A7 /* UIImage+LYAdd.m */; };
+		D8A06EFEC4926C0E6F347C3549E8F764 /* LYSegmentBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DBC833F1A83085302892F12052D570F /* LYSegmentBar.m */; };
+		D9B08C749F6E072F6AB4C96D4FD5D50D /* UIView+LYAdjustFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 57DB94E302A612962E8387C2D6DFF7D3 /* UIView+LYAdjustFrame.m */; };
 		E40B8B7F15FB8DDDDFBD49A5FBE1E457 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BC7E840066535B08631D757B8CD1167 /* Foundation.framework */; };
-		FF20AF4068D167159A4886449C5D6D53 /* LYSegmentBar-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 74A668A42CA20F038408EC58C98F2E88 /* LYSegmentBar-dummy.m */; };
+		F51FB1B151E598154122F026FF4BDFF7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BC7E840066535B08631D757B8CD1167 /* Foundation.framework */; };
+		FCD952BD5907E6B6255AB41381C75D01 /* UIImage+LYAdd.h in Headers */ = {isa = PBXBuildFile; fileRef = 23F5949390442F0C91D9FBDD458DFC33 /* UIImage+LYAdd.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FFE883FFC434A8A0573501D32B7EE37C /* CALayer+LYAnimate.h in Headers */ = {isa = PBXBuildFile; fileRef = CB37DFED436A6758115913401C63105D /* CALayer+LYAnimate.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		14260F1A0C67ADE5822BE1171B482A14 /* PBXContainerItemProxy */ = {
+		179EF1B313C564E11EC5238458205DFB /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = A2E8B269FAE468388A3B2737DBFE7E6D;
+			remoteGlobalIDString = 690FBEB5FABABAC787DBA96074C4EEF2;
 			remoteInfo = LYXiMaLaYaFMBase;
 		};
 		769F1629C9CFC729808CF839DB047A23 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 3ACE1211C3B3FADF56531EC32A0AD2BF;
+			remoteGlobalIDString = 99D192F20F344546473CEAC4F9609EB9;
 			remoteInfo = LYSegmentBar;
 		};
 		7C7EC40B64311656C1A3AA88E3DBB900 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = A2E8B269FAE468388A3B2737DBFE7E6D;
+			remoteGlobalIDString = 690FBEB5FABABAC787DBA96074C4EEF2;
 			remoteInfo = LYXiMaLaYaFMBase;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0269DC3019B96F1A9ED036ADC9E5BC03 /* LYSegmentBarViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LYSegmentBarViewController.m; sourceTree = "<group>"; };
 		038C70620921352B47CE54C49F3242D9 /* Pods_LYSegmentBar_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_LYSegmentBar_Example.framework; path = "Pods-LYSegmentBar_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		047069AB655E5F199143CB397E6F3367 /* LYXiMaLaYaFMBase-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LYXiMaLaYaFMBase-dummy.m"; sourceTree = "<group>"; };
 		0A64C45A97CD4CAAD278658028F6A5D5 /* Pods-LYSegmentBar_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LYSegmentBar_Tests.release.xcconfig"; sourceTree = "<group>"; };
@@ -70,6 +73,8 @@
 		2D5CD2587412A66FA0BDE45294CF182B /* LYXiMaLaYaFMBase-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LYXiMaLaYaFMBase-prefix.pch"; sourceTree = "<group>"; };
 		331ABCB36815DBCCA4A696445D126B24 /* CALayer+LYAnimate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "CALayer+LYAnimate.m"; path = "LYXiMaLaYaFMBase/Classes/Category/CALayer+LYAnimate.m"; sourceTree = "<group>"; };
 		4055DF95F378DF6BF47A5E0A73B7919F /* LYXiMaLaYaFMBase.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LYXiMaLaYaFMBase.xcconfig; sourceTree = "<group>"; };
+		4470A610AD881C2682BE8A03922AF7A1 /* LYSegmentBarViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LYSegmentBarViewController.h; sourceTree = "<group>"; };
+		4DBC833F1A83085302892F12052D570F /* LYSegmentBar.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LYSegmentBar.m; sourceTree = "<group>"; };
 		4EC0A9E640205C8E70CAFA08536DFB35 /* LYSegmentBar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = LYSegmentBar.framework; path = LYSegmentBar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		54BAC05CB2EE3CC5FB2D1548A2DDE6C7 /* LYSegmentBar.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = LYSegmentBar.modulemap; sourceTree = "<group>"; };
 		57DB94E302A612962E8387C2D6DFF7D3 /* UIView+LYAdjustFrame.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+LYAdjustFrame.m"; path = "LYXiMaLaYaFMBase/Classes/Category/UIView+LYAdjustFrame.m"; sourceTree = "<group>"; };
@@ -87,6 +92,7 @@
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9BEAB81BD6E7E6B4AE52CCD3874A98BC /* LYXiMaLaYaFMBase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LYXiMaLaYaFMBase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A23B3E8E7BF6D2FFBAAABF7E17B6543E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A2CF1810C67A01BE534A8183B86D84F9 /* LYSegmentBar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LYSegmentBar.h; sourceTree = "<group>"; };
 		A3CF9BD5645316B48DFE5D1AFD645E7D /* LYSegmentBar.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LYSegmentBar.xcconfig; sourceTree = "<group>"; };
 		A9C4703FF4F297F49A01B29C761001A1 /* Pods-LYSegmentBar_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LYSegmentBar_Tests-frameworks.sh"; sourceTree = "<group>"; };
 		AE8AFE13033E05F2661B992458C68B30 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -96,10 +102,8 @@
 		CB37DFED436A6758115913401C63105D /* CALayer+LYAnimate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "CALayer+LYAnimate.h"; path = "LYXiMaLaYaFMBase/Classes/Category/CALayer+LYAnimate.h"; sourceTree = "<group>"; };
 		D53ED478FAD86ED825AD2B2D0C16EE1C /* Pods-LYSegmentBar_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LYSegmentBar_Example-frameworks.sh"; sourceTree = "<group>"; };
 		E0076AAFDDC357ADADE038EF34EF9916 /* Pods-LYSegmentBar_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LYSegmentBar_Example-umbrella.h"; sourceTree = "<group>"; };
-		E8236B19ECC5D8EBC0292456D94840E8 /* LYSegmentBar.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LYSegmentBar.m; sourceTree = "<group>"; };
 		F0F87F2B4755DC94BA18CCFF42D208E0 /* Pods-LYSegmentBar_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LYSegmentBar_Example.release.xcconfig"; sourceTree = "<group>"; };
 		F269E656E9AE2DB755BFF999C67652D5 /* Pods-LYSegmentBar_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LYSegmentBar_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		F95DF33D6365FAF2B3BC94073BADDB19 /* LYSegmentBar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LYSegmentBar.h; sourceTree = "<group>"; };
 		FB58E7DDA895764D41E12EFAF60228BE /* LYXiMaLaYaFMBase.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = LYXiMaLaYaFMBase.modulemap; sourceTree = "<group>"; };
 		FB8660ED72B80B4B083EDA8956F2FA40 /* Pods-LYSegmentBar_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LYSegmentBar_Tests-umbrella.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -121,20 +125,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		86D42DE4CCCD66522A5C85A2A6AE3F27 /* Frameworks */ = {
+		2792E87FFD8193E681AA3FDEF35E7437 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D7CDC44A094811E062A9B580D84E040D /* Foundation.framework in Frameworks */,
-				64665EBEF5E5CE158DF2611D36FF2FD2 /* LYXiMaLaYaFMBase.framework in Frameworks */,
+				2E2EE6DE1F72F2DC4944FFCAEF141993 /* Foundation.framework in Frameworks */,
+				2EB109135BBBE24A420A0CED5287E4E6 /* LYXiMaLaYaFMBase.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9B4B58D3BB7E4A6A429D22F26FA1645F /* Frameworks */ = {
+		AEE8CD83486F3CF95FF2C0E4A4E80B42 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5118898FA9F80906870424182E7FB0BF /* Foundation.framework in Frameworks */,
+				F51FB1B151E598154122F026FF4BDFF7 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -164,15 +168,6 @@
 			path = "Example/Pods/Target Support Files/LYSegmentBar";
 			sourceTree = "<group>";
 		};
-		3585732C235F5CF4E2B4418E714C4A05 /* LYSegmentBar */ = {
-			isa = PBXGroup;
-			children = (
-				63757C47EE5E1376841A5A497D0F15C9 /* Classes */,
-			);
-			name = LYSegmentBar;
-			path = LYSegmentBar;
-			sourceTree = "<group>";
-		};
 		45D990D438D3834B54BF7DB6BEF6F6DC /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -187,16 +182,6 @@
 				6BC7E840066535B08631D757B8CD1167 /* Foundation.framework */,
 			);
 			name = iOS;
-			sourceTree = "<group>";
-		};
-		63757C47EE5E1376841A5A497D0F15C9 /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				F95DF33D6365FAF2B3BC94073BADDB19 /* LYSegmentBar.h */,
-				E8236B19ECC5D8EBC0292456D94840E8 /* LYSegmentBar.m */,
-			);
-			name = Classes;
-			path = Classes;
 			sourceTree = "<group>";
 		};
 		652D919926085477E6565C3FE7DAD60C /* Products */ = {
@@ -225,11 +210,20 @@
 		9C7774B09815BB4474CA5351CB1DB5DA /* LYSegmentBar */ = {
 			isa = PBXGroup;
 			children = (
-				3585732C235F5CF4E2B4418E714C4A05 /* LYSegmentBar */,
+				9F56A61E47180D0DF51744F9330E4D93 /* LYSegmentBar */,
 				335B683C8B585B751579F3A77D2ACDDB /* Support Files */,
 			);
 			name = LYSegmentBar;
 			path = ../..;
+			sourceTree = "<group>";
+		};
+		9F56A61E47180D0DF51744F9330E4D93 /* LYSegmentBar */ = {
+			isa = PBXGroup;
+			children = (
+				F2C59A45DBE41648ADA72BC8B83430DA /* Classes */,
+			);
+			name = LYSegmentBar;
+			path = LYSegmentBar;
 			sourceTree = "<group>";
 		};
 		BF163A8CB932283C16EEB4165FF1ACF8 /* Targets Support Files */ = {
@@ -290,6 +284,18 @@
 			path = "Target Support Files/Pods-LYSegmentBar_Example";
 			sourceTree = "<group>";
 		};
+		F2C59A45DBE41648ADA72BC8B83430DA /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				A2CF1810C67A01BE534A8183B86D84F9 /* LYSegmentBar.h */,
+				4DBC833F1A83085302892F12052D570F /* LYSegmentBar.m */,
+				4470A610AD881C2682BE8A03922AF7A1 /* LYSegmentBarViewController.h */,
+				0269DC3019B96F1A9ED036ADC9E5BC03 /* LYSegmentBarViewController.m */,
+			);
+			name = Classes;
+			path = Classes;
+			sourceTree = "<group>";
+		};
 		F2C99016A0231074D97BD2A1E5367E6C /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -325,12 +331,13 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		115CD8829CC7329F497AC9F85B10F5ED /* Headers */ = {
+		33FDDFC40C63C8FEF801E273D38CE57B /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3BBF9E0C1241F9F4FC69D81409C5844E /* LYSegmentBar-umbrella.h in Headers */,
-				9B35A1F107B2E314881F298AA48C8926 /* LYSegmentBar.h in Headers */,
+				5E52560521EF0FBA163C7BC47F12BAF1 /* LYSegmentBar-umbrella.h in Headers */,
+				218772EBCB84D966703E7D1759B223E0 /* LYSegmentBar.h in Headers */,
+				5716EAC837C9787F556EDBB747757BF0 /* LYSegmentBarViewController.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -342,14 +349,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CE5ECC0A0905F8190E3D18F3A6BB8C8A /* Headers */ = {
+		74D77944208E040B24028E807ECF9729 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				86BF38834CDE985AB6F7AAD80B62FE19 /* CALayer+LYAnimate.h in Headers */,
-				CEC4294A4987B868F86C42FAD3C6421A /* LYXiMaLaYaFMBase-umbrella.h in Headers */,
-				3F80A7D7B5C7E741B6D4E8412E49C10C /* UIImage+LYAdd.h in Headers */,
-				36915378E0FDADB4FA2D073AB5FE5829 /* UIView+LYAdjustFrame.h in Headers */,
+				FFE883FFC434A8A0573501D32B7EE37C /* CALayer+LYAnimate.h in Headers */,
+				7F97C57572E5FB84B97EF66F842811CF /* LYXiMaLaYaFMBase-umbrella.h in Headers */,
+				FCD952BD5907E6B6255AB41381C75D01 /* UIImage+LYAdd.h in Headers */,
+				1983C91F8D2FB9B5D1D750DA85197F79 /* UIView+LYAdjustFrame.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -364,31 +371,13 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		3ACE1211C3B3FADF56531EC32A0AD2BF /* LYSegmentBar */ = {
+		690FBEB5FABABAC787DBA96074C4EEF2 /* LYXiMaLaYaFMBase */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2F5595755B92498491169A8FB02ABB4F /* Build configuration list for PBXNativeTarget "LYSegmentBar" */;
+			buildConfigurationList = 7436AF6271F6218E4FA6A9FFCD94CDD2 /* Build configuration list for PBXNativeTarget "LYXiMaLaYaFMBase" */;
 			buildPhases = (
-				65F8EF0060B528FB4F8628F70D845063 /* Sources */,
-				86D42DE4CCCD66522A5C85A2A6AE3F27 /* Frameworks */,
-				115CD8829CC7329F497AC9F85B10F5ED /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				FBCB08AFA8A9B31665384C5CD018B6E3 /* PBXTargetDependency */,
-			);
-			name = LYSegmentBar;
-			productName = LYSegmentBar;
-			productReference = 4EC0A9E640205C8E70CAFA08536DFB35 /* LYSegmentBar.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		A2E8B269FAE468388A3B2737DBFE7E6D /* LYXiMaLaYaFMBase */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = B0576A44B28CF195DBABF070F7169159 /* Build configuration list for PBXNativeTarget "LYXiMaLaYaFMBase" */;
-			buildPhases = (
-				662F66E07B951AB0A0955E4B805E9CD7 /* Sources */,
-				9B4B58D3BB7E4A6A429D22F26FA1645F /* Frameworks */,
-				CE5ECC0A0905F8190E3D18F3A6BB8C8A /* Headers */,
+				DD890915AC37833E62A86AE190A055E6 /* Sources */,
+				AEE8CD83486F3CF95FF2C0E4A4E80B42 /* Frameworks */,
+				74D77944208E040B24028E807ECF9729 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -397,6 +386,24 @@
 			name = LYXiMaLaYaFMBase;
 			productName = LYXiMaLaYaFMBase;
 			productReference = 254351F05C2ECE626E80539E1B549214 /* LYXiMaLaYaFMBase.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		99D192F20F344546473CEAC4F9609EB9 /* LYSegmentBar */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F41D185D0899427C4DC3E7BBFC662369 /* Build configuration list for PBXNativeTarget "LYSegmentBar" */;
+			buildPhases = (
+				1F49DA47D4A2FA5C10320E0D69F07534 /* Sources */,
+				2792E87FFD8193E681AA3FDEF35E7437 /* Frameworks */,
+				33FDDFC40C63C8FEF801E273D38CE57B /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DF4A03AC53CE2E2E2DB2065E080E7295 /* PBXTargetDependency */,
+			);
+			name = LYSegmentBar;
+			productName = LYSegmentBar;
+			productReference = 4EC0A9E640205C8E70CAFA08536DFB35 /* LYSegmentBar.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		CA07B1671C4DA2CCDB0D518C18D814C2 /* Pods-LYSegmentBar_Tests */ = {
@@ -456,8 +463,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				3ACE1211C3B3FADF56531EC32A0AD2BF /* LYSegmentBar */,
-				A2E8B269FAE468388A3B2737DBFE7E6D /* LYXiMaLaYaFMBase */,
+				99D192F20F344546473CEAC4F9609EB9 /* LYSegmentBar */,
+				690FBEB5FABABAC787DBA96074C4EEF2 /* LYXiMaLaYaFMBase */,
 				D5E71C81FE41BA9D531A5FB18B0A5C09 /* Pods-LYSegmentBar_Example */,
 				CA07B1671C4DA2CCDB0D518C18D814C2 /* Pods-LYSegmentBar_Tests */,
 			);
@@ -465,23 +472,13 @@
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		65F8EF0060B528FB4F8628F70D845063 /* Sources */ = {
+		1F49DA47D4A2FA5C10320E0D69F07534 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FF20AF4068D167159A4886449C5D6D53 /* LYSegmentBar-dummy.m in Sources */,
-				90B90349DAEB157FF8DB7352676D9421 /* LYSegmentBar.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		662F66E07B951AB0A0955E4B805E9CD7 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				85E91261B4CABE782D90E609464F0F8D /* CALayer+LYAnimate.m in Sources */,
-				AE11DB011C787A6415F9BA6D26F3CC02 /* LYXiMaLaYaFMBase-dummy.m in Sources */,
-				1E1C13027ECC91484A1A57E69ED672BE /* UIImage+LYAdd.m in Sources */,
-				E2F591C7B15D41A643B98CBEEB54C9AD /* UIView+LYAdjustFrame.m in Sources */,
+				8DC205C10AF155DC76CCE4AF9DA8024C /* LYSegmentBar-dummy.m in Sources */,
+				D8A06EFEC4926C0E6F347C3549E8F764 /* LYSegmentBar.m in Sources */,
+				A69B1CD4F01A1BC18A463FD86BBC1537 /* LYSegmentBarViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -501,62 +498,41 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DD890915AC37833E62A86AE190A055E6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8EFD981F5129AC0D9ECF1214DBFBB8B8 /* CALayer+LYAnimate.m in Sources */,
+				8CFFF207D46B541CFFF030CEF2D9126E /* LYXiMaLaYaFMBase-dummy.m in Sources */,
+				B3DEA22BDA0856E967CAAAA858B274D5 /* UIImage+LYAdd.m in Sources */,
+				D9B08C749F6E072F6AB4C96D4FD5D50D /* UIView+LYAdjustFrame.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
 		5E1A4CE2023042BB26926E4B8097BB20 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = LYSegmentBar;
-			target = 3ACE1211C3B3FADF56531EC32A0AD2BF /* LYSegmentBar */;
+			target = 99D192F20F344546473CEAC4F9609EB9 /* LYSegmentBar */;
 			targetProxy = 769F1629C9CFC729808CF839DB047A23 /* PBXContainerItemProxy */;
 		};
 		71BDEE98C2D6C46246B6D8DFF5BF6D8D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = LYXiMaLaYaFMBase;
-			target = A2E8B269FAE468388A3B2737DBFE7E6D /* LYXiMaLaYaFMBase */;
+			target = 690FBEB5FABABAC787DBA96074C4EEF2 /* LYXiMaLaYaFMBase */;
 			targetProxy = 7C7EC40B64311656C1A3AA88E3DBB900 /* PBXContainerItemProxy */;
 		};
-		FBCB08AFA8A9B31665384C5CD018B6E3 /* PBXTargetDependency */ = {
+		DF4A03AC53CE2E2E2DB2065E080E7295 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = LYXiMaLaYaFMBase;
-			target = A2E8B269FAE468388A3B2737DBFE7E6D /* LYXiMaLaYaFMBase */;
-			targetProxy = 14260F1A0C67ADE5822BE1171B482A14 /* PBXContainerItemProxy */;
+			target = 690FBEB5FABABAC787DBA96074C4EEF2 /* LYXiMaLaYaFMBase */;
+			targetProxy = 179EF1B313C564E11EC5238458205DFB /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		013D08E2F07359DDCC3781687B3606F7 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = A3CF9BD5645316B48DFE5D1AFD645E7D /* LYSegmentBar.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/LYSegmentBar/LYSegmentBar-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/LYSegmentBar/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/LYSegmentBar/LYSegmentBar.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = LYSegmentBar;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 		075C5709C68B4BCB5FE4CA371D6C88C4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = BAD02D752E06C397A0444D7CDC459CC4 /* Pods-LYSegmentBar_Tests.debug.xcconfig */;
@@ -628,6 +604,38 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
+		};
+		1E1CE008B5856BC822C4F93C7F1AFEAC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4055DF95F378DF6BF47A5E0A73B7919F /* LYXiMaLaYaFMBase.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/LYXiMaLaYaFMBase/LYXiMaLaYaFMBase-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/LYXiMaLaYaFMBase/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/LYXiMaLaYaFMBase/LYXiMaLaYaFMBase.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = LYXiMaLaYaFMBase;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
 		};
 		31610D3B8414E8ECCFB28BAF5FCEC29D /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -749,39 +757,7 @@
 			};
 			name = Debug;
 		};
-		58D082A911051FF2DEC0079CD647A348 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4055DF95F378DF6BF47A5E0A73B7919F /* LYXiMaLaYaFMBase.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/LYXiMaLaYaFMBase/LYXiMaLaYaFMBase-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/LYXiMaLaYaFMBase/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/LYXiMaLaYaFMBase/LYXiMaLaYaFMBase.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = LYXiMaLaYaFMBase;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		6A5CE2147BAB7A069A6FEF6501134E16 /* Release */ = {
+		58ACB080D67F2C557A65B12046BB0518 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 4055DF95F378DF6BF47A5E0A73B7919F /* LYXiMaLaYaFMBase.xcconfig */;
 			buildSettings = {
@@ -857,7 +833,39 @@
 			};
 			name = Release;
 		};
-		E0E5B50F266179DF0656DEDF39179A3B /* Debug */ = {
+		8D430DBC3E60B638B662D2A3EE575028 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A3CF9BD5645316B48DFE5D1AFD645E7D /* LYSegmentBar.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/LYSegmentBar/LYSegmentBar-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/LYSegmentBar/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/LYSegmentBar/LYSegmentBar.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = LYSegmentBar;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A3980C7730F74812795B6B85BF605955 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A3CF9BD5645316B48DFE5D1AFD645E7D /* LYSegmentBar.xcconfig */;
 			buildSettings = {
@@ -910,20 +918,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2F5595755B92498491169A8FB02ABB4F /* Build configuration list for PBXNativeTarget "LYSegmentBar" */ = {
+		7436AF6271F6218E4FA6A9FFCD94CDD2 /* Build configuration list for PBXNativeTarget "LYXiMaLaYaFMBase" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E0E5B50F266179DF0656DEDF39179A3B /* Debug */,
-				013D08E2F07359DDCC3781687B3606F7 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		B0576A44B28CF195DBABF070F7169159 /* Build configuration list for PBXNativeTarget "LYXiMaLaYaFMBase" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				58D082A911051FF2DEC0079CD647A348 /* Debug */,
-				6A5CE2147BAB7A069A6FEF6501134E16 /* Release */,
+				1E1CE008B5856BC822C4F93C7F1AFEAC /* Debug */,
+				58ACB080D67F2C557A65B12046BB0518 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -933,6 +932,15 @@
 			buildConfigurations = (
 				31610D3B8414E8ECCFB28BAF5FCEC29D /* Debug */,
 				1654254CF1B10859C2FE72704F58F41E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F41D185D0899427C4DC3E7BBFC662369 /* Build configuration list for PBXNativeTarget "LYSegmentBar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A3980C7730F74812795B6B85BF605955 /* Debug */,
+				8D430DBC3E60B638B662D2A3EE575028 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

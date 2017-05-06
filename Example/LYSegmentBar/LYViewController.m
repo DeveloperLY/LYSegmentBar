@@ -7,7 +7,7 @@
 //
 
 #import "LYViewController.h"
-#import "LYSegmentBarViewController.h"
+#import "LYSegmentBar/LYSegmentBarViewController.h"
 #import <LYXiMaLaYaFMBase/UIView+LYAdjustFrame.h>
 
 @interface LYViewController ()
