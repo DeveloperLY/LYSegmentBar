@@ -23,8 +23,12 @@
     [super viewDidLoad];
     self.automaticallyAdjustsScrollViewInsets = NO;
     
+    self.segmentBarViewController.segmentBar.frame = CGRectMake(0, 0, 300.0f, 35.0f);
+    self.navigationItem.titleView = self.segmentBarViewController.segmentBar;
+    
     self.segmentBarViewController.view.frame = self.view.bounds;
     [self.view addSubview:self.segmentBarViewController.view];
+    
     
     // @[@"推荐", @"热门", @"分类", @"榜单", @"主播"]
     // 创建对应的子控制器
