@@ -24,6 +24,7 @@
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
 		A30B2D89C94D1BE863DF01EA /* Pods_LYSegmentBar_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B61B867313D29CD67F431956 /* Pods_LYSegmentBar_Tests.framework */; };
+		CD55CAFE1EBDEBDD004BD793 /* LYSegmentBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD55CAFD1EBDEBDD004BD793 /* LYSegmentBarViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +65,8 @@
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A4296CB945C03D818C373B38 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		B61B867313D29CD67F431956 /* Pods_LYSegmentBar_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LYSegmentBar_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD55CAFC1EBDEBDD004BD793 /* LYSegmentBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYSegmentBarViewController.h; sourceTree = "<group>"; };
+		CD55CAFD1EBDEBDD004BD793 /* LYSegmentBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYSegmentBarViewController.m; sourceTree = "<group>"; };
 		DA711DA5E4291DBBB7B69E51 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		EDF896FAA698632A55EDB898 /* Pods-LYSegmentBar_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LYSegmentBar_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LYSegmentBar_Tests/Pods-LYSegmentBar_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		FD64F0E4F3FE9E2F17376C9C /* Pods-LYSegmentBar_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LYSegmentBar_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-LYSegmentBar_Example/Pods-LYSegmentBar_Example.release.xcconfig"; sourceTree = "<group>"; };
@@ -200,6 +203,8 @@
 		CDCADA401EBB79F700A5D0CB /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				CD55CAFC1EBDEBDD004BD793 /* LYSegmentBarViewController.h */,
+				CD55CAFD1EBDEBDD004BD793 /* LYSegmentBarViewController.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -405,6 +410,7 @@
 				6003F59E195388D20070C39A /* LYAppDelegate.m in Sources */,
 				6003F5A7195388D20070C39A /* LYViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
+				CD55CAFE1EBDEBDD004BD793 /* LYSegmentBarViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
