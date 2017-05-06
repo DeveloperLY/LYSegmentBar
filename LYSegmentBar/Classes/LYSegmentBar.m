@@ -30,13 +30,6 @@
 #pragma mark - Life Cycle
 + (instancetype)segmentBarWithFrame:(CGRect)frame {
     LYSegmentBar *segmentBar = [[LYSegmentBar alloc] initWithFrame:frame];
-    
-    // 添加滚动视图
-    UIScrollView *scrollView = [[UIScrollView alloc] initWithFrame:frame];
-    scrollView.showsHorizontalScrollIndicator = NO;
-    [segmentBar addSubview:scrollView];
-    segmentBar.contentView = scrollView;
-    
     return segmentBar;
 }
 
@@ -66,6 +59,15 @@
     }
     
     self.contentView.contentSize = CGSizeMake(lastX, 0.0f);
+    
+    if (self.titleButtons.count == 0) {
+        return;
+    }
+    
+    UIButton *selectedButton = self.titleButtons[self.selectedIndex];
+    self.underLine.ly_width = selectedButton.ly_width;
+    self.underLine.ly_centerX = selectedButton.ly_centerX;
+    self.underLine.ly_y = self.ly_height - self.underLine.ly_height;
 }
 
 #pragma mark - Event/Touch
@@ -155,6 +157,16 @@
         _underLine = underLineView;
     }
     return _underLine;
+}
+
+- (UIScrollView *)contentView {
+    if (!_contentView) {
+        UIScrollView *scrollView = [[UIScrollView alloc] init];
+        scrollView.showsVerticalScrollIndicator = NO;
+        [self addSubview:scrollView];
+        _contentView = scrollView;
+    }
+    return _contentView;
 }
 
 @end
