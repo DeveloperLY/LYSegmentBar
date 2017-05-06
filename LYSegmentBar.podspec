@@ -30,7 +30,7 @@ LYSegmentBar: 选项卡组件.
 
   s.ios.deployment_target = '8.0'
 
-  s.source_files = 'LYSegmentBar/Classes/**/*{.h, .m}'
+  s.source_files = 'LYSegmentBar/Classes/**/*'
 
   # s.resource_bundles = {
   #   'LYSegmentBar' => ['LYSegmentBar/Assets/*.png']
