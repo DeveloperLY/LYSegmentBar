@@ -72,6 +72,8 @@
         [self.segmentBarViewController.segmentBar updateWithConfig:^(LYSegmentBarConfig *config) {
             config.segmentBarBackColor = [UIColor yellowColor];
             config.underLineColor = [UIColor magentaColor];
+            
+            config.titleNormalColorBlock([UIColor greenColor]).titleSelectColorBlock([UIColor orangeColor]);
         }];
     });
 }

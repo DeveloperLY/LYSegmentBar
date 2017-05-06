@@ -24,4 +24,53 @@
     return config;
 }
 
+- (LYSegmentBarConfig *(^)(UIColor *))segmentBarBackColorBlock {
+    return ^(UIColor *color) {
+        self.segmentBarBackColor = color;
+        return self;
+    };
+}
+
+- (LYSegmentBarConfig *(^)(UIFont *))titleFontBlock {
+    return ^(UIFont *font) {
+        self.titleFont = font;
+        return self;
+    };
+}
+
+- (LYSegmentBarConfig *(^)(UIColor *))titleNormalColorBlock {
+    return ^(UIColor *color) {
+        self.titleNormalColor = color;
+        return self;
+    };
+}
+
+- (LYSegmentBarConfig *(^)(UIColor *))titleSelectColorBlock {
+    return ^(UIColor *color) {
+        self.titleSelectColor = color;
+        return self;
+    };
+}
+
+- (LYSegmentBarConfig *(^)(UIColor *))underLineColorBlock {
+    return ^(UIColor *color) {
+        self.underLineColor = color;
+        return self;
+    };
+}
+
+- (LYSegmentBarConfig *(^)(CGFloat))underLineHeightBlock {
+    return ^(CGFloat underLineHeight) {
+        self.underLineHeight = underLineHeight;
+        return self;
+    };
+}
+
+- (LYSegmentBarConfig *(^)(CGFloat))underLineExtraWidthBlock {
+    return ^(CGFloat underLineExtraWidth) {
+        self.underLineExtraWidth = underLineExtraWidth;
+        return self;
+    };
+}
+
 @end

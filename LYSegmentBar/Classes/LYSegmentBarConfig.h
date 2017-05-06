@@ -33,4 +33,26 @@
 /** 下标指示器额外宽度 */
 @property (nonatomic, assign) CGFloat underLineExtraWidth;
 
+
+/** segmentBar 背景色 */
+- (LYSegmentBarConfig *(^)(UIColor *))segmentBarBackColorBlock;
+
+/** title 普通状态颜色 */
+- (LYSegmentBarConfig *(^)(UIColor *))titleNormalColorBlock;
+
+/** title 选中状态颜色 */
+- (LYSegmentBarConfig *(^)(UIColor *))titleSelectColorBlock;
+
+/** title 字体 */
+- (LYSegmentBarConfig *(^)(UIFont *))titleFontBlock;
+
+/** 下标指示器颜色 */
+- (LYSegmentBarConfig *(^)(UIColor *))underLineColorBlock;
+
+/** 下标指示器高度 */
+- (LYSegmentBarConfig *(^)(CGFloat))underLineHeightBlock;
+
+/** 下标指示器额外宽度 */
+- (LYSegmentBarConfig *(^)(CGFloat))underLineExtraWidthBlock;
+
 @end
