@@ -97,6 +97,8 @@
 - (UIScrollView *)contentView {
     if (!_contentView) {
         UIScrollView *contentView = [[UIScrollView alloc] init];
+        contentView.showsVerticalScrollIndicator = NO;
+        contentView.showsHorizontalScrollIndicator = NO;
         contentView.delegate = self;
         contentView.pagingEnabled = YES;
         [self.view addSubview:contentView];

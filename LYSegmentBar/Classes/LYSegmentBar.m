@@ -163,6 +163,7 @@
     if (!_contentView) {
         UIScrollView *scrollView = [[UIScrollView alloc] init];
         scrollView.showsVerticalScrollIndicator = NO;
+        scrollView.showsHorizontalScrollIndicator = NO;
         [self addSubview:scrollView];
         _contentView = scrollView;
     }
