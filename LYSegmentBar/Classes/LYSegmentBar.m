@@ -23,6 +23,9 @@
 /** 选中的TitleButton */
 @property (nonatomic, strong) UIButton *selectedButton;
 
+/** 配置 */
+@property (nonatomic, strong) LYSegmentBarConfig *config;
+
 @end
 
 @implementation LYSegmentBar
@@ -31,6 +34,13 @@
 + (instancetype)segmentBarWithFrame:(CGRect)frame {
     LYSegmentBar *segmentBar = [[LYSegmentBar alloc] initWithFrame:frame];
     return segmentBar;
+}
+
+- (instancetype)initWithFrame:(CGRect)frame {
+    if (self = [super initWithFrame:frame]) {
+        self.backgroundColor = self.config.segmentBarBackColor;
+    }
+    return self;
 }
 
 - (void)layoutSubviews {
@@ -65,9 +75,29 @@
     }
     
     UIButton *selectedButton = self.titleButtons[self.selectedIndex];
-    self.underLine.ly_width = selectedButton.ly_width;
+    self.underLine.ly_width = selectedButton.ly_width + self.config.underLineExtraWidth;
+    self.underLine.ly_height = self.config.underLineHeight;
     self.underLine.ly_centerX = selectedButton.ly_centerX;
     self.underLine.ly_y = self.ly_height - self.underLine.ly_height;
+}
+
+#pragma mark - Public Method
+- (void)updateWithConfig:(void (^)(LYSegmentBarConfig *))configBlock {
+    if (configBlock) {
+        configBlock(self.config);
+    }
+    
+    // 更新设置
+    self.backgroundColor = self.config.segmentBarBackColor;
+    
+    for (UIButton *titleButton in self.titleButtons) {
+        titleButton.titleLabel.font = self.config.titleFont;
+        [titleButton setTitleColor:self.config.titleNormalColor forState:UIControlStateNormal];
+        [titleButton setTitleColor:self.config.titleSelectColor forState:UIControlStateSelected];
+    }
+    
+    // 下标相关
+    self.underLine.backgroundColor = self.config.underLineColor;
 }
 
 #pragma mark - Event/Touch
@@ -88,7 +118,7 @@
     
     // 设置下标指示器的位置
     [UIView animateWithDuration:0.15f animations:^{
-        self.underLine.ly_width = sender.ly_width;
+        self.underLine.ly_width = sender.ly_width + self.config.underLineExtraWidth;
         self.underLine.ly_centerX = sender.ly_centerX;
     }];
     
@@ -117,9 +147,10 @@
     for (NSString *title in titleArray) {
         UIButton *titleButton = [UIButton buttonWithType:UIButtonTypeCustom];
         titleButton.tag = self.titleButtons.count;
+        titleButton.titleLabel.font = self.config.titleFont;
         [titleButton setTitle:title forState:UIControlStateNormal];
-        [titleButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
-        [titleButton setTitleColor:[UIColor redColor] forState:UIControlStateSelected];
+        [titleButton setTitleColor:self.config.titleNormalColor forState:UIControlStateNormal];
+        [titleButton setTitleColor:self.config.titleSelectColor forState:UIControlStateSelected];
         [titleButton addTarget:self action:@selector(titleButtonDidTouch:) forControlEvents:UIControlEventTouchUpInside];
         [self.contentView addSubview:titleButton];
         [self.titleButtons addObject:titleButton];
@@ -151,8 +182,8 @@
 
 - (UIView *)underLine {
     if (!_underLine) {
-        UIView *underLineView = [[UIView alloc] initWithFrame:CGRectMake(0, self.ly_height - 2.0f, 0, 2.0f)];
-        underLineView.backgroundColor = [UIColor redColor];
+        UIView *underLineView = [[UIView alloc] initWithFrame:CGRectMake(0, self.ly_height - self.config.underLineHeight, 0, self.config.underLineHeight)];
+        underLineView.backgroundColor = self.config.underLineColor;
         [self.contentView addSubview:underLineView];
         _underLine = underLineView;
     }
@@ -168,6 +199,13 @@
         _contentView = scrollView;
     }
     return _contentView;
+}
+
+- (LYSegmentBarConfig *)config {
+    if (!_config) {
+        _config = [LYSegmentBarConfig defaultConfig];
+    }
+    return _config;
 }
 
 @end

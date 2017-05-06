@@ -11,6 +11,7 @@
 #endif
 
 #import "LYSegmentBar.h"
+#import "LYSegmentBarConfig.h"
 #import "LYSegmentBarViewController.h"
 
 FOUNDATION_EXPORT double LYSegmentBarVersionNumber;

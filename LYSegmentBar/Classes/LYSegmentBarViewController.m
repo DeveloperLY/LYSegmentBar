@@ -87,7 +87,6 @@
     if (!_segmentBar) {
         LYSegmentBar *segmentBar = [LYSegmentBar segmentBarWithFrame:CGRectZero];
         segmentBar.delegate = self;
-        segmentBar.backgroundColor = [UIColor orangeColor];
         [self.view addSubview:segmentBar];
         _segmentBar = segmentBar;
     }

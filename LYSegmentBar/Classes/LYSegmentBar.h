@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "LYSegmentBarConfig.h"
 
 @class LYSegmentBar;
 
@@ -28,5 +29,7 @@
 
 /** 选中的下标 */
 @property (nonatomic, assign) NSInteger selectedIndex;
+
+- (void)updateWithConfig:(void(^)(LYSegmentBarConfig *config))configBlock;
 
 @end

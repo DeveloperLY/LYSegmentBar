@@ -132,7 +132,6 @@
 		6003F593195388D20070C39A /* Example for LYSegmentBar */ = {
 			isa = PBXGroup;
 			children = (
-				CDCADA401EBB79F700A5D0CB /* Classes */,
 				6003F59C195388D20070C39A /* LYAppDelegate.h */,
 				6003F59D195388D20070C39A /* LYAppDelegate.m */,
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
@@ -195,13 +194,6 @@
 				EDF896FAA698632A55EDB898 /* Pods-LYSegmentBar_Tests.release.xcconfig */,
 			);
 			name = Pods;
-			sourceTree = "<group>";
-		};
-		CDCADA401EBB79F700A5D0CB /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

@@ -68,6 +68,11 @@
         self.segmentBarViewController.segmentBar.frame = CGRectMake(0, 0, 300.0f, 35.0f);
         self.navigationItem.titleView = self.segmentBarViewController.segmentBar;
         [self.segmentBarViewController setUpWithTitleArray: @[@"推荐", @"热门", @"分类", @"榜单", @"主播", @"推荐", @"热门", @"分类", @"榜单", @"主播"] childViewControllers:@[vc1, vc2, vc3, vc4, vc5, vc6, vc7, vc8, vc9, vc10]];
+        
+        [self.segmentBarViewController.segmentBar updateWithConfig:^(LYSegmentBarConfig *config) {
+            config.segmentBarBackColor = [UIColor yellowColor];
+            config.underLineColor = [UIColor magentaColor];
+        }];
     });
 }
 
